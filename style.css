@@ -1,0 +1,109 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.signature-img {
+    margin: 1em 0 2em 0;
+}
+
+.author-image {
+    margin-bottom: 1em;
+}
+
+p {
+    margin: 0 0 .5em 0;
+}
+
+/* ==== Layout ===== */
+
+.container {
+    width: 90%; /* 90% por que os 10% ficam mais como espaços pros lados do container */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.6em;
+}
+
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1rem;
+}
+
+
+/* ==== images effects ==== */
+
+.shrink:hover {
+    transform: scale(0.95);
+    transition: transform 1s;
+    
+}
+
+.shrink:active {
+    opacity: 0.5;
+}
+
+
+
+
+/* ===== Typography ===== */
+
+
+h2 {
+    font-family: 'Homemade Apple', sans-serif;
+    font-size: 1.375rem;
+    border-bottom: 2px solid black;
+    margin-top: 0;
+}
+
+.description {
+    font-size: .9375rem;
+    font-weight: 700;
+    padding-top: .625em;
+}
+
+
+/* ===== Media Queries ===== */
+
+@media (min-width: 718px) {
+    
+    .container-flex {
+        display: block;
+    }
+
+    .author-image {
+        width: 33%;
+        float: left;
+        margin-right: 1em;
+    }
+
+    .container-header {
+        max-width: 50%;
+    }
+
+    .book-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
