@@ -1,4 +1,4 @@
-# tribute-page
+# Tribute page
 A tribute page for Edgar Allan Poe, this is a challenge from FreeCodeCamp, this was my first Front End project.
 
 ## :hammer: Built with
